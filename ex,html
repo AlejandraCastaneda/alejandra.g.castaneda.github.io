@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Alejandra Castaneda - Home</title>
+<title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,31 +15,35 @@ body {
 }
 
 /* Style the header */
-.header {  
+.header {
+  padding:30px;
+  text-align: center;
+  
   background-image: url('https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   /* Other background properties */
-  color: #F6DFCB;  
-  text-align: center; 
-  height: calc(100vh - 40px); /* Corrected */
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: #F6DFCB;
+  font-family: Courier New;
+
 }
 
 /* Increase the font size of the h1 element */
 .header h1 {
   font-size: 100px;
-  font-family: 'Snickles', sans-serif; 
-  margin: 10px; 
+  font-family: Courier New;
 }
 
-.header h2 {
-  font-size: 30px;
-  font-family: Courier New;
-  margin: 7px;
+grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Three columns of 100px each */
+  gap: 10px; /* Adjust gap between squares */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity by changing the last value */
 }
 
 /* Style the top navigation bar */
@@ -48,11 +52,6 @@ body {
   background-color: #0C365A;
   font-size: 18px; /* Adjust the font size as needed */
   font-family: Courier New; /* Change the font family */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 40px; /* Adjust navbar height */
-  position: relative;
 }
 
 /* Style the navigation bar links */
@@ -61,6 +60,7 @@ body {
   display: block;
   color: #F6DFCB;
   text-align: center;
+  padding: 18px 20px;
   text-decoration: none;
 }
 
@@ -84,14 +84,38 @@ body {
   display: none;
 }
 
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #0D0E15;
+  color: #F6DFCB;
+
+  padding: 20px;
+}
 
 /* Main column */
 .main {   
   flex: 70%;
   background-color: #0D0E15;
   color: #F6DFCB;
+
   padding: 20px;
 }
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
 
 /* Show hamburger only when screen width is less than 700px */
 @media screen and (max-width: 700px) {
@@ -117,7 +141,7 @@ body {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #F6DFCB;
+    color: white;
   }
   .menu a:hover {
     background-color: #0472AD;
@@ -141,35 +165,31 @@ body {
   }
   
 }
-
-@font-face {
-  font-family: 'Snickles';
-  src: url('../fonts/snickles-font/Snickles-YPq4.ttf') format('truetype');
-}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h2>Welcome!</h2> 
-  <h2>My name is</h2>
   <h1>Alejandra Castaneda</h1>
-  <h2>Please Explore</h2>
+  <h3>A website created by me.</h3>
+ <div class="grid-container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
 </div>
 
 <div class="navbar">
   <a href="#" class="toggle" id="toggle">&#9776;</a>
-  <a href="index.html">Home</a>  
-  <a href="about.html" class="right">About</a>  
-  <a href="#">Resume</a>
-  <a href="#" class="right">Projects</a>
+  <a href="index.html">Home</a>
   <a href="#" class="right">Contact</a>
+  <a href="#" class="right">Projects</a>
+  <a href="about.html" class="right">About</a>
 </div>
 
 <div class="menu" id="menu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
-  <a href="#">Resume</a>
   <a href="#">Projects</a>
   <a href="#">Contact</a>
 </div>
@@ -186,5 +206,34 @@ body {
     });
   });
 </script>
+
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
 </body>
 </html>
