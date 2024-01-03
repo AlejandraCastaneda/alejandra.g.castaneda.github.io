@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Alejandra Castaneda - Home</title>
+<title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,17 +15,29 @@ body {
 }
 
 /* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
+.header {  
+  background-image: url('/users/alejc/OneDrive/Desktop/projects/alejandra.g.castaneda.github.io/cssi/images/Home_BG.jpg');
+  /* Other background properties */
+
+  color: #F6DFCB;  
+  
+  text-align: center; 
+  height: calc(100vh - 40px); /* Corrected */
+    background-size: cover;
+  background-position: center;
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+    align-items: center;
+
+
+
 }
 
 /* Increase the font size of the h1 element */
 .header h1 {
   font-size: 100px;
-  font-family: 'Snickles', sans-serif; 
+  font-family: snickles;
   margin: 10px; 
 }
 
@@ -46,6 +58,8 @@ body {
   align-items: center;
   height: 40px; /* Adjust navbar height */
   position: relative;
+
+
 }
 
 /* Style the navigation bar links */
@@ -134,6 +148,18 @@ body {
   }
   
 }
+
+@font-face {
+  font-family: 'snickles'; /* Name for your font */
+  src: url('/Users/alejc/OneDrive/Desktop/projects/alejandra.g.castaneda.github.io/css/fonts/snickles-font/Snickles-YPq4.ttf') format('truetype'), /* Path to your font file */
+  /* You can include other font properties here like font-weight, font-style */
+}
+
+body {
+  font-family: 'snickles', sans-serif; /* Use the defined font-family */
+}
+
+
 </style>
 </head>
 <body>
@@ -143,6 +169,7 @@ body {
   <h2>My name is</h2>
   <h1>Alejandra Castaneda</h1>
   <h2>Please Explore</h2>
+  
 </div>
 
 <div class="navbar">
@@ -157,7 +184,7 @@ body {
 <div class="menu" id="menu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
-  <a href="#">Resume</a>
+   <a href="#">Resume</a>
   <a href="#">Projects</a>
   <a href="#">Contact</a>
 </div>
