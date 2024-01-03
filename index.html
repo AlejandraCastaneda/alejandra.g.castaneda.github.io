@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<title>Alejandra Castaneda - Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
 
 /* Style the header */
 .header {  
-  background-image: url('css/images/Home_BG.jpg');
+  background-image: url('css/images/Home_BG.jpg');  /* Pawel Czerwinski */
   /* Other background properties */
-
   color: #F6DFCB;  
-  
   text-align: center; 
   height: calc(100vh - 40px); /* Corrected */
-    background-size: cover;
+  background-size: cover;
   background-position: center;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   justify-content: center;
-    align-items: center;
-
-
-
+  align-items: center;
 }
 
 /* Increase the font size of the h1 element */
 .header h1 {
   font-size: 100px;
   font-family: snickles;
-  margin: 10px; 
+  letter-spacing: 3px; 
+  margin: 0px; 
 }
 
 .header h2 {
   font-size: 30px;
-  font-family: Courier New;
-  margin: 7px;
+  font-weight: bold;
+  font-family: "Trirong";
+  margin: 0px;
 }
 
 /* Style the top navigation bar */
@@ -52,14 +42,12 @@ body {
   overflow: hidden;
   background-color: #0C365A;
   font-size: 18px; /* Adjust the font size as needed */
-  font-family: Courier New; /* Change the font family */
+  font-family: "Trirong"; /* Change the font family */
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 40px; /* Adjust navbar height */
   position: relative;
-
-
 }
 
 /* Style the navigation bar links */
@@ -91,15 +79,6 @@ body {
   display: none;
 }
 
-
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: #0D0E15;
-  color: #F6DFCB;
-  padding: 20px;
-}
-
 /* Show hamburger only when screen width is less than 700px */
 @media screen and (max-width: 700px) {
   .navbar a:not(.toggle) {
@@ -120,12 +99,14 @@ body {
     left: 0;
     text-align: center;
   }
+
   .menu a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #F6DFCB;
   }
+
   .menu a:hover {
     background-color: #0472AD;
     color: #F6DFCB;
@@ -146,7 +127,6 @@ body {
     display: none;
     /* rest of your menu styles */
   }
-  
 }
 
 @font-face {
@@ -155,21 +135,14 @@ body {
   /* You can include other font properties here like font-weight, font-style */
 }
 
-body {
-  font-family: 'snickles', sans-serif; /* Use the defined font-family */
-}
-
-
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h2>Welcome!</h2> 
-  <h2>My name is</h2>
+  <h2>Hello!<br>My name is</h2>
   <h1>Alejandra Castaneda</h1>
-  <h2>Please Explore</h2>
-  
+  <h2>Please explore the links below :)</h2>
 </div>
 
 <div class="navbar">
@@ -200,6 +173,7 @@ body {
       }
     });
   });
+
 </script>
 </body>
 </html>

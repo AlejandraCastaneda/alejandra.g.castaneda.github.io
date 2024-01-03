@@ -11,3 +11,6 @@ Inspiration:
     Colorful: https://www.rubens.design/
     Layout: https://www.wix.com/blog/website-layouts
     Animated Home Screens: https://www.sliderrevolution.com/resources/css-animated-background/
+
+
+elegant font style: Cinzel Decorative
